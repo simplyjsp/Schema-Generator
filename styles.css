@@ -1,0 +1,121 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1e2530;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+.btn {
+    background-color: #7fffd4;
+    color: #1e2530;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: #5fdfb4;
+}
+.btn.secondary {
+    background-color: #4a5568;
+    color: #ffffff;
+}
+.btn.secondary:hover {
+    background-color: #2d3748;
+}
+h1, h2, h3 {
+    color: #7fffd4;
+}
+.schema-section {
+    display: none;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.schema-section.active {
+    display: block;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a0aec0;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #4a5568;
+    background-color: #2d3748;
+    color: #ffffff;
+    border-radius: 5px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+#schemaCheckboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#schemaOutput {
+    background-color: #2d3748;
+    border-radius: 5px;
+    padding: 15px;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+.help-text, .instructions, .faq {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.help-text h3, .instructions h2, .faq h2 {
+    margin-top: 0;
+}
+.help-text ul, .instructions ol {
+    padding-left: 20px;
+}
+.help-text li, .instructions li {
+    margin-bottom: 5px;
+}
+.accordion {
+    background-color: #4a5568;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.accordion:hover {
+    background-color: #2d3748;
+}
+.panel {
+    padding: 0 18px;
+    background-color: rgba(255, 255, 255, 0.05);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0 0 5px 5px;
+}
+.download-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
